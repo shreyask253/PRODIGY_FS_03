@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Welcome to Our Local E-Store!</h1>
+<p>Browse our products and shop online.</p>
+<a href="{{ url_for('products') }}" class="btn btn-primary">Shop Now</a>
+{% endblock %}

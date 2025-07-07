@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Order Success{% endblock %}
+
+{% block content %}
+<div class="alert alert-success mt-4" role="alert">
+    <h4 class="alert-heading">Purchase Successful 🎉</h4>
+    <p>Thank you, <strong>{{ name }}</strong>! Your order has been placed.</p>
+    <hr>
+    <p>Estimated Delivery Date: <strong>{{ delivery_date }}</strong></p>
+    <a href="{{ url_for('products') }}" class="btn btn-primary mt-3">Continue Shopping</a>
+</div>
+{% endblock %}
